@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+	<Appenders>
+		<Console name="console">
+			<patternLayout>
+				<pattetn>%p -%d %l %n</pattetn>
+			</patternLayout>
+		</Console>
+		<File name="MyFile" fileName="C:/Logs/placement.Log">
+			<patternLayout>
+				<pattetn>%p -%d %l %n</pattetn>
+			</patternLayout>
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="info">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="MyFile" />
+		</Root>
+	</Loggers>
+</Configuration>
